@@ -1,0 +1,36 @@
+<div class="details">
+  <div class="profile-pic">
+    <img src={{detaildata[event]?.img}} alt="some image">
+  </div>
+  <div class="message"><button>SEND MESSAGE!</button></div>
+  <div class="rating">
+    <i *ngFor="let  number of [1,2,3,4,5]"
+      [ngClass]="{'fa fa-heart':true, 'dark': number<=detaildata[event]?.rating}"></i>
+
+  </div>
+  <div class="desc">
+    <p>{{detaildata[event]
+
+
+
+      ?.Description}}
+    </p>
+  </div>
+  <div class="favourites">
+    <table>
+      <thead>
+        <tr>
+          <th>Likes</th>
+          <th>Dislikes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of detaildata; index as i">
+          <td>{{detaildata[event]?.Likes[i] }}</td>
+          <td>{{ detaildata[event]?.Dislikes[i]}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

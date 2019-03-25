@@ -1,0 +1,24 @@
+.selected {
+  background: #ddd;
+}
+li {
+  line-height: 100px;
+  border-bottom: 2px solid #999;
+}
+ul li:last-child {
+  border-bottom: none;
+}
+li i {
+  display: none;
+}
+.fullname {
+  margin-left: 10px;
+}
+
+.selected i {
+  display: inline-block;
+  float: right;
+  line-height: 100px;
+  margin-right: 10px;
+  font-size: 1.4em;
+}

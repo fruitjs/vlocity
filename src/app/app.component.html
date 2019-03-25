@@ -1,3 +1,5 @@
-<h1>hello</h1>
-<button (click)="getProducts()">GET /products</button>
 <app-header></app-header>
+<div class="wrapper">
+  <app-navigation (eventClicked)="childEventClicked($event)"></app-navigation>
+  <app-details [event]="clickedEvent"></app-details>
+</div>

@@ -1,0 +1,30 @@
+input{
+     border-radius: 11px;
+    border: 1px solid;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    font-size: 1.2em;
+
+}
+.search-panel{
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.search-icon{
+      position: absolute;
+    transform: translate(50%);
+    left: 0;
+    top: 10px;
+}
+.close-search{
+    position: absolute;
+    right: 0;
+    transform: translate(-50%);
+    top: 7px;
+    font-size: 1.3em;
+
+  }

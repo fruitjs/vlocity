@@ -1,0 +1,6 @@
+<ul class="navigation">
+  <li *ngFor="let person of detaildata; index as i" (click)="loadPersonDetails(i)"
+    [ngClass]="{'selected':condition===i}">
+    <span class="fullname">{{person?.name}}</span>
+    <i class="fa fa-caret-right"></i></li>
+</ul>
